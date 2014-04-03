@@ -3,7 +3,7 @@
   MAP
   END
 
-                              ITEMIZE
+                              ITEMIZE(1)
 VariableType:String             EQUATE
 VariableType:Byte               EQUATE
 VariableType:Short              EQUATE
@@ -81,6 +81,7 @@ VariableFactory.Deallocate    PROCEDURE
     ;OF VariableType:Date  ;  DISPOSE(SELF.DateRef  )
     ;OF VariableType:Time  ;  DISPOSE(SELF.TimeRef  )
   END
+  SELF.Type = 0
   
 VariableFactory.GetRef        PROCEDURE!,*?
 NullRef                         &BYTE
